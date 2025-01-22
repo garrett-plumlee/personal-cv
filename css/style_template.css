@@ -1,64 +1,135 @@
-/* Color Pallete */
-
-/* Font */
-
 /* General Styles */
 body {
+    background-color: #f2f4f3;
     margin: 0;
 }
 
 /* Nav Styles */
 nav {
     background-color: #C6AC8F;
+    color: #0A0908;
+    display: flex;
+    flex-direction: row;
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: space-between;
 }
 
-nav p, nav a {}
+nav p, nav a {
+    margin: 10px;
+    padding: 7px;
+}
 
-nav a {}
+nav a {
+    color: #0A0908;
+}
 
-nav a:hover {}
+nav a:hover {
+    color: #2e2e2e;
+}
 
 /* Footer Styles */
-footer {}
+footer {
+    background-color: #22333b;
+    display: flex;
+    justify-content: center;
+    color: #f2f4f3;
+}
 
-footer a {}
+footer a {
+    color: #f2f4f3;
+}
 
-footer a:hover {}
+footer a:hover {
+    color: #d1d1d1;
+}
 
 /* Splash Section */
-.splash {}
+.splash {
+    
+}
 
-.splash h1 {}
+.splash h1 {
+    color: #0A0908;
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
 
-.splash img {}
+.splash img {
+    border: #0A0908 solid;
+    border-radius: 15%;
+}
 
-.splash p {}
+.splash p {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* Horizontal Rules */
-hr {}
+hr {
+    border: 3px solid;
+    border-color: #5E503F;
+}
 
 /* Sections */
-section {}
+section {
+
+}
 
 /* Section Headings */
-section h2 {}
+section h2 {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+
+section h3 { /*unnecessary??????????????*/
+    font-size: 19px;
+}
 
 /* Paragraph Styles */
-section p {}
+section p {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
 
 /* link styles */
-section a {}
-section a:hover {}
+section a {
+    color: #22333B;
+    font-weight: 400;
+    text-decoration: none;
+}
+section a:hover {
+    text-decoration: underline;
+}
 
-/* List Styles */
-ul {}
+/* List Styles */ /* NEEDS GRID LAYOUT */
+ul {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
 
-dl {}
+dl {
+    font-size: 18px;
+}
 dl dt{}
 dl dd{}
 
 /* Project Section */
-.three-col {}
+.three-col { /* NEEDS GRID LAYOUT */
+
+}
 
 .card {}
 
@@ -78,3 +149,30 @@ form input:focus, form textarea:focus {}
 form button {}
 
 form button:hover {}
+
+
+/* Fonts */
+
+.tinos-regular {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tinos-bold {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .tinos-regular-italic {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .tinos-bold-italic {
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
