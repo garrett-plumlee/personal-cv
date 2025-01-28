@@ -173,7 +173,12 @@ dl dd{}
 }
 
 /* Contact Page Styles */
-.one-col {}
+.one-col {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
 
 form {}
 
@@ -181,7 +186,12 @@ form input, form textarea {}
 
 form input:focus, form textarea:focus {}
 
-form button {}
+form button {
+    font-family: "Tinos", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
 
 form button:hover {}
 
