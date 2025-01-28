@@ -14,6 +14,8 @@ nav {
     font-weight: 400;
     font-style: normal;
     justify-content: space-between;
+    border-bottom: solid 1px;
+    border-color: #5E503F;
 }
 
 nav p, nav a {
@@ -35,6 +37,8 @@ footer {
     display: flex;
     justify-content: center;
     color: #f2f4f3;
+    border-top: solid 3px;
+    border-color: #5E503F;
 }
 
 footer a {
@@ -47,7 +51,10 @@ footer a:hover {
 
 /* Splash Section */
 .splash {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align : center;
 }
 
 .splash h1 {
@@ -71,6 +78,14 @@ footer a:hover {
     font-style: normal;
 }
 
+.splashinfo {
+    text-decoration: underline;
+}
+
+.splashtext {
+    margin: 5px;
+}
+
 /* Horizontal Rules */
 hr {
     border: 3px solid;
@@ -79,7 +94,7 @@ hr {
 
 /* Sections */
 section {
-
+    margin-left: 4px;
 }
 
 /* Section Headings */
@@ -88,9 +103,10 @@ section h2 {
     font-weight: 700;
     font-style: normal;
     font-size: 28px;
+    color: #22333B;
 }
 
-section h3 { /*unnecessary??????????????*/
+section h3 {
     font-size: 19px;
 }
 
@@ -104,7 +120,7 @@ section p {
 
 /* link styles */
 section a {
-    color: #22333B;
+    color: #317731;
     font-weight: 400;
     text-decoration: none;
 }
@@ -112,7 +128,7 @@ section a:hover {
     text-decoration: underline;
 }
 
-/* List Styles */ /* NEEDS GRID LAYOUT */
+/* List Styles */
 ul {
     font-family: "Tinos", serif;
     font-weight: 400;
@@ -121,13 +137,21 @@ ul {
 }
 
 dl {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 10px;
     font-size: 18px;
 }
-dl dt{}
-dl dd{}
+dl dt{
+    text-align: left;
+}
+dl dd{
+    text-align: right;
+}
 
 /* Project Section */
-.three-col { /* NEEDS GRID LAYOUT */
+.three-col {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     justify-content: center;
@@ -174,26 +198,69 @@ dl dd{}
 
 /* Contact Page Styles */
 .one-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #C6AC8F;
+    border-color: #22333B;
+    border: solid;
+    border-radius: 5%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+    transition: 0.3s;
+    padding: 1rem;
+    width: 80%;
+    max-width: 40rem;
+    min-height: 20rem;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    gap: 8px;
+}
+
+form {
     font-family: "Tinos", serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-size: 18px;
 }
 
-form {}
+form input, form textarea {
+    height: 60%;
+    width: 60%;
+    max-width: 20rem;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #22333B;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
-form input, form textarea {}
-
-form input:focus, form textarea:focus {}
+form input:focus, form textarea:focus {
+    
+}
 
 form button {
     font-family: "Tinos", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
+    width: 100%;
+    background-color: #22333B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-form button:hover {}
+form button:hover {
+    background-color: #1b2a30;
+}
 
 
 /* Fonts */
